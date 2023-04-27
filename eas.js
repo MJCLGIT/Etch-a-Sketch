@@ -1,4 +1,12 @@
 
+// button for grid size choice
+let gridSize = document.getElementById('gridsize');
+
+// listener for grid size choice, prompt for number
+gridSize.addEventListener('click', function(){
+    prompt ("Enter a number!");
+});
+
 // 16 containers
 let gridContainers = document.getElementById('gridContainers');
 
