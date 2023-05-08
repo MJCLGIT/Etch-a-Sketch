@@ -28,9 +28,11 @@
     /* border: 1px solid black; */
     min-height: 10px;
     min-width: 10px;
+    transition: background-color 15s ease-in-out;
 }
 
 .gridItem:hover {
     background-color: #000000;
+    transition: background-color .1s ease-in-out;
     /* border: 1px solid aqua; */
   }
