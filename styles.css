@@ -1,22 +1,36 @@
-/* container containing 16 divs */
+/* button for grid size choice */
+#gridSizeButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    /* set the height of the container to the height of the viewport */
+    height: 10vh; 
+  }
+  
+  #gridSizeButton {
+    padding: 10px;
+  }
+
+/* container containing (size) divs */
 #gridContainers {
     display: flex;
     flex-wrap: wrap;
-    width: 960px;
-    height: 960px;
-    gap: 10px;
+    max-width: 960px;
+    /* max-height: 960px; */
+    /* gap: .5px; */
     margin-top: 10px;
 }
 
-/* 16 divs */
+/* (size) divs */
 .gridItem {
     background-color: aqua;
-    border: 1px solid black;
-    flex: 1 0 calc((100% - 50px) / 4);
-    height: calc((100% - 50px) / 4);
+    /* border: 1px solid black; */
+    min-height: 10px;
+    min-width: 10px;
 }
 
 .gridItem:hover {
     background-color: #000000;
-    border: 1px solid aqua;
+    /* border: 1px solid aqua; */
   }
